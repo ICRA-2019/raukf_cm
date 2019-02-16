@@ -41,7 +41,7 @@ if size(xi,1)==4
     xi_q = xi(1:4,:);
     q_m = xi(1:4,1); % inicialização
     e_i = zeros(3,n_i);
-    e_s = zeros(3,1);
+    e_s = ones(3,1);
     % keyboard
     while norm(e_s)>10^-6
         for i = 1:n_i
